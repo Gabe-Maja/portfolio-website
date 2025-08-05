@@ -14,7 +14,8 @@ const AboutSection = () => {
     "Databricks",
     "Git",
     "GitHub",
-    "AI & Automation"
+    "AI Agents",
+    "Process Automation"
   ];
 
   const softSkills = [
@@ -38,7 +39,7 @@ const AboutSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              About <span className="text-primary">Gabe</span>
+              About <span className="text-primary">Gabriel Kevin Maja (Gabe)</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Data Analytics & Business Intelligence Professional
@@ -53,7 +54,8 @@ const AboutSection = () => {
                 <img
                   src="/media/gabe.jpg"
                   alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist"
-                  className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
+                  className="w-80 h-80 object-cover object-center rounded-2xl shadow-2xl"
+                  style={{ objectPosition: "center 20%" }}
                   loading="lazy"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
@@ -76,12 +78,14 @@ const AboutSection = () => {
                 make a measurable impact.
               </p>
 
-              <div className="bg-primary/5 p-6 rounded-lg border-l-4 border-primary">
+              <div className="bg-gradient-to-br from-muted/30 to-muted/60 p-6 rounded-lg border-l-4 border-primary">
                 <h3 className="font-semibold text-primary mb-2">What Sets Gabe Apart</h3>
                 <p className="text-muted-foreground">
-                  Gabe is a curious individual actively learning about new AI innovations and exploring 
-                  how they can automate processes, make workflows more efficient, and increase quality. 
-                  This forward-thinking approach allows him to stay at the forefront of data analytics innovation.
+                  Gabriel specializes in building AI agent-based systems that revolutionize how organizations 
+                  approach automation. His recent social media automation project achieved a remarkable 90% 
+                  time reduction in content creation and distribution through intelligent workflow design. 
+                  This AI-first mindset, combined with his analytical expertise, positions him at the cutting 
+                  edge of next-generation business intelligence solutions.
                 </p>
               </div>
             </div>
@@ -90,7 +94,7 @@ const AboutSection = () => {
           {/* Skills Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Hard Skills */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-muted/30 to-muted/60">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-primary">Hard Skills</h3>
                 <div className="flex flex-wrap gap-2">
@@ -104,7 +108,7 @@ const AboutSection = () => {
             </Card>
 
             {/* Soft Skills */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-muted/30 to-muted/60">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-primary">Soft Skills</h3>
                 <div className="flex flex-wrap gap-2">
@@ -118,7 +122,7 @@ const AboutSection = () => {
             </Card>
 
             {/* Industry Experience */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-muted/30 to-muted/60">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-primary">Industry Experience</h3>
                 <div className="flex flex-wrap gap-2">

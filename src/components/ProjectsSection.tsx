@@ -1,8 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BarChart3, Brain, Shield, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, BarChart3, Brain, Shield, Zap, ExternalLink } from "lucide-react";
+import { useState } from "react";
+import ProjectDetailModal from "./ProjectDetailModal";
+import { projectDetailsData } from "@/data/projectDetails";
 
 const ProjectsSection = () => {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const projects = [
     {
       id: 1,
@@ -50,8 +57,16 @@ const ProjectsSection = () => {
     }
   ];
 
+  const handleTakeDeepDive = (projectId: number) => {
+    const projectDetail = projectDetailsData.find(p => p.id === projectId);
+    if (projectDetail) {
+      setSelectedProject(projectDetail);
+      setIsModalOpen(true);
+    }
+  };
+
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 bg-gradient-to-br from-muted/30 to-muted/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -124,12 +139,31 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                   </div>
+
+                  {/* Take a Deeper Dive Button */}
+                  <div className="pt-4 border-t border-border">
+                    <Button 
+                      onClick={() => handleTakeDeepDive(project.id)}
+                      variant="outline" 
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Take a Deeper Dive
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Project Detail Modal */}
+      <ProjectDetailModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 };
