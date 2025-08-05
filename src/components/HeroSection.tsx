@@ -1,7 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { FileText, Mail } from "lucide-react";
+import { useState, useEffect } from "react";
+import aiHeroBackground from "@/assets/ai-hero-background.jpg";
 
 const HeroSection = () => {
+  // Rotating text phrases for the tagline
+  const rotatingPhrases = [
+    "AI, Data Science and Advanced Analytics",
+    "Machine Learning and Predictive Modeling", 
+    "Business Intelligence and Data Engineering",
+    "Statistical Analysis and Data Visualization",
+    "Artificial Intelligence and Big Data"
+  ];
+
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  // Handle phrase rotation every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      
+      setTimeout(() => {
+        setCurrentPhraseIndex((prev) => (prev + 1) % rotatingPhrases.length);
+        setIsVisible(true);
+      }, 150); // Short delay for fade-out before changing text
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [rotatingPhrases.length]);
+
   const handleContactClick = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -17,11 +45,21 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-emerald-50/20"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
       aria-label="Hero section - Gabriel Maja Data Analyst"
     >
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25 dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]" aria-hidden="true" />
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${aiHeroBackground})` }}
+        aria-hidden="true"
+      />
+      
+      {/* Emerald Overlay for brand consistency and text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-emerald-900/30" aria-hidden="true" />
+      
+      {/* Additional decorative grid overlay */}
+      <div className="absolute inset-0 bg-grid-slate-100/10 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.3))] dark:bg-grid-slate-700/5" aria-hidden="true" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -34,9 +72,20 @@ const HeroSection = () => {
             <span className="text-foreground">Unlocked</span>
           </h1>
 
-          {/* Tagline */}
+          {/* Tagline with rotating text */}
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.2s]">
-            Leveraging AI, Data Science and Advanced Analytics to Transform Data into 
+            Leveraging{" "}
+            <span 
+              className={`text-primary font-semibold transition-opacity duration-300 ${
+                isVisible ? 'opacity-100' : 'opacity-0'
+              }`}
+              role="text"
+              aria-live="polite"
+              aria-label="Rotating skills and expertise"
+            >
+              {rotatingPhrases[currentPhraseIndex]}
+            </span>
+            {" "}to Transform Data into 
             <span className="text-primary font-semibold"> Actionable Solutions </span>
             with Measurable Impact
           </p>
