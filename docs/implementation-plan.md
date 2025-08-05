@@ -13,12 +13,12 @@
 ### 2. Build Hero / Home Section
 
 - Add name, headline, short blurb
-- Insert photo: use `gabe.jpg` (from media directory)
 - Create two CTA buttons: Email + Resume embed
 
 ### 3. About Section
-
+- Insert photo: use `gabe.jpg` (from media directory)
 - Import content from `intro.md` (trimmed for clarity) in content directory
+- Side-by-side style for photo & intro.
 - Include technical skills as icons or compact bullets
 
 ### 4. Projects Section
