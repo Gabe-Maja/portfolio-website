@@ -6,9 +6,9 @@ Gabe is a data analytics and business intelligence professional with a strong fo
 
 His analytics work spans insurance, fintech, and marketing - translating complex datasets into clear, actionable narratives that support decision-making and business performance. Based in South Africa, he's actively exploring opportunities where data storytelling can make a measurable impact.
 
-## What Sets Gabriel Apart
+## What Sets Gabe Apart
 
-Gabriel is a curious individual actively learning about new AI innovations and exploring how they can automate processes, make workflows more efficient, and increase quality. This forward-thinking approach to emerging technologies allows him to stay at the forefront of data analytics innovation and continuously enhance the value he delivers to organizations.
+Gabe is a curious individual actively learning about new AI innovations and exploring how they can automate processes, make workflows more efficient, and increase quality. This forward-thinking approach to emerging technologies allows him to stay at the forefront of data analytics innovation and continuously enhance the value he delivers to organizations.
 
 ## Technical Skills
 
