@@ -110,13 +110,13 @@ const TestimonialsSection = () => {
             
             <CarouselPrevious className="hidden md:flex -left-12" />
             <CarouselNext className="hidden md:flex -right-12" />
-          </Carousel>
 
-          {/* Mobile carousel controls */}
-          <div className="flex justify-center gap-4 mt-8 md:hidden">
-            <CarouselPrevious className="relative inset-auto translate-x-0 translate-y-0" />
-            <CarouselNext className="relative inset-auto translate-x-0 translate-y-0" />
-          </div>
+            {/* Mobile carousel controls - moved inside Carousel */}
+            <div className="flex justify-center gap-4 mt-8 md:hidden">
+              <CarouselPrevious className="relative inset-auto translate-x-0 translate-y-0" />
+              <CarouselNext className="relative inset-auto translate-x-0 translate-y-0" />
+            </div>
+          </Carousel>
         </div>
       </div>
     </section>
