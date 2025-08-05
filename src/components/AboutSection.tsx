@@ -32,7 +32,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-background to-emerald-50/10">
+    <section id="about" className="py-20 bg-gradient-to-b from-background to-emerald-50/10" aria-label="About Gabriel Maja section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -52,8 +52,9 @@ const AboutSection = () => {
               <div className="relative">
                 <img
                   src="/media/gabe.jpg"
-                  alt="Gabriel Maja"
+                  alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist"
                   className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
               </div>

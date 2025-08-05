@@ -77,8 +77,9 @@ const TestimonialsSection = () => {
                         <div className="relative">
                           <img
                             src={testimonial.image}
-                            alt={testimonial.name}
+                            alt={`Professional headshot of ${testimonial.name}, ${testimonial.role}`}
                             className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                            loading="lazy"
                           />
                           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
                         </div>
