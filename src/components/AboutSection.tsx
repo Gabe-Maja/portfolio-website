@@ -55,7 +55,7 @@ const AboutSection = () => {
                   src="/media/gabe.jpg"
                   alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist"
                   className="w-80 h-80 object-cover object-center rounded-2xl shadow-2xl"
-                  style={{ objectPosition: "center 20%" }}
+                  style={{ objectPosition: "center 30%" }}
                   loading="lazy"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
@@ -78,15 +78,25 @@ const AboutSection = () => {
                 make a measurable impact.
               </p>
 
-              <div className="bg-gradient-to-br from-muted/30 to-muted/60 p-6 rounded-lg border-l-4 border-primary">
-                <h3 className="font-semibold text-primary mb-2">What Sets Gabe Apart</h3>
-                <p className="text-muted-foreground">
-                  Gabriel specializes in building AI agent-based systems that revolutionize how organizations 
-                  approach automation. His recent social media automation project achieved a remarkable 90% 
-                  time reduction in content creation and distribution through intelligent workflow design. 
-                  This AI-first mindset, combined with his analytical expertise, positions him at the cutting 
-                  edge of next-generation business intelligence solutions.
-                </p>
+              <div className="bg-gradient-to-br from-[hsl(var(--brand-sage))] to-[hsl(var(--brand-sage)_/_0.8)] p-6 rounded-lg border-l-4 border-primary">
+                <h3 className="font-semibold text-primary-foreground mb-2">What Sets Gabe Apart</h3>
+                <div className="text-primary-foreground space-y-4">
+                  <p>
+                    Gabe is at the forefront of AI automation, actively building agent-based systems that transform repetitive business processes into streamlined workflows. His hands-on approach to AI development goes beyond theory - he's currently deploying agentic workflows that achieve ~90% time reduction in complex, multi-step processes.
+                  </p>
+                  
+                  <p className="font-semibold">
+                    Why this matters to your business:
+                  </p>
+                  
+                  <p>
+                    Most business workflows contain repetitive elements that can be automated through AI agents. Gabe has developed the competence to identify these automation opportunities and build custom AI solutions that deliver measurable efficiency gains. While others discuss AI potential, Gabe engineers working systems that eliminate manual bottlenecks and scale operations without additional headcount.
+                  </p>
+                  
+                  <p>
+                    This AI-first mindset means he doesn't just analyze your data - he builds intelligent systems that continuously optimize your business processes.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -94,12 +104,12 @@ const AboutSection = () => {
           {/* Skills Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Hard Skills */}
-            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-muted/30 to-muted/60">
+            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-[hsl(var(--brand-sage))] to-[hsl(var(--brand-sage)_/_0.8)]">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary">Hard Skills</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary-foreground">Hard Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {hardSkills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="text-sm">
+                    <Badge key={skill} className="text-sm bg-[hsl(var(--brand-charcoal))] text-white hover:bg-[hsl(var(--brand-charcoal)_/_0.8)]">
                       {skill}
                     </Badge>
                   ))}
@@ -108,12 +118,12 @@ const AboutSection = () => {
             </Card>
 
             {/* Soft Skills */}
-            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-muted/30 to-muted/60">
+            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-[hsl(var(--brand-sage))] to-[hsl(var(--brand-sage)_/_0.8)]">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary">Soft Skills</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary-foreground">Soft Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {softSkills.map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-sm">
+                    <Badge key={skill} variant="outline" className="text-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
                       {skill}
                     </Badge>
                   ))}
@@ -122,12 +132,12 @@ const AboutSection = () => {
             </Card>
 
             {/* Industry Experience */}
-            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-muted/30 to-muted/60">
+            <Card className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-[hsl(var(--brand-sage))] to-[hsl(var(--brand-sage)_/_0.8)]">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary">Industry Experience</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary-foreground">Industry Experience</h3>
                 <div className="flex flex-wrap gap-2">
                   {industries.map((industry) => (
-                    <Badge key={industry} className="text-sm">
+                    <Badge key={industry} className="text-sm bg-primary text-primary-foreground hover:bg-primary/80">
                       {industry}
                     </Badge>
                   ))}

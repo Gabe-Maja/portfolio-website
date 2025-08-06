@@ -66,7 +66,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-muted/30 to-muted/60">
+    <section id="projects" className="py-20 bg-gradient-to-br from-[hsl(var(--brand-sage)_/_0.3)] to-[hsl(var(--brand-sage)_/_0.6)]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}

@@ -6,9 +6,9 @@ import aiHeroBackground from "@/assets/ai-hero-background.jpg";
 const HeroSection = () => {
   // Rotating text phrases for the tagline
   const rotatingPhrases = [
-    "Artificial Intelligence to Transform Data",
-    "Business Intelligence to Transform Data", 
-    "Data Science to Transform Data"
+    "Artificial Intelligence",
+    "Business Intelligence", 
+    "Data Science"
   ];
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
