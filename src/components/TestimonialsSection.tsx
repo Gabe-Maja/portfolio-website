@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
     {
       id: 1,
       name: "Elizabeth Kendall Stanley",
-      role: "Senior Professional",
+      role: "Analytics Manager",
       image: "/media/elizabeth.jpg",
       quote: "I had the pleasure of working closely with Gabe during his time as a Data Scientist. His drive to grow - both technically and as a leader - stood out early on. He played a pivotal role in a pricing prediction project, delivering real-world impact through structured problem-solving and sharp analytical skills. Gabriel actively upskills when challenged and leads by example. He also mentored junior team members with clarity and care. A strong contributor with leadership potential and a genuine hunger to learn.",
       linkedinUrl: "https://www.linkedin.com/in/elizabeth-kendall-stanley-a5845650/overlay/about-this-profile/"
