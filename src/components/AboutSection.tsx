@@ -23,7 +23,7 @@ const AboutSection = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
                 <img src="/media/gabe.jpg" alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist" className="w-80 h-80 object-cover object-center rounded-2xl shadow-2xl" style={{
-                objectPosition: "center 30%"
+                objectPosition: "center 45%"
               }} loading="lazy" />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
               </div>
