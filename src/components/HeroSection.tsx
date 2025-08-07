@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { FileText, Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 import aiHeroBackground from "@/assets/ai-hero-background.jpg";
-import { getAssetUrl } from "@/utils/assets";
 
 const HeroSection = () => {
   // Rotating text phrases for the tagline
@@ -38,7 +37,7 @@ const HeroSection = () => {
 
   const handleResumeClick = () => {
     // Open PDF in new tab
-    window.open(getAssetUrl("/media/CV - Gabriel Maja 2025.pdf"), "_blank");
+    window.open("/media/CV - Gabriel Maja 2025.pdf", "_blank");
   };
 
   return (

@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
-import { getAssetUrl } from "@/utils/assets";
 
 // Configure PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -27,7 +26,7 @@ const ContactSection = () => {
 
   const email = "gabemaja10@gmail.com";
   const linkedinUrl = "https://www.linkedin.com/in/gabriel-kevin-maja/";
-  const resumeUrl = getAssetUrl("/media/CV - Gabriel Maja 2025.pdf");
+  const resumeUrl = "/media/CV - Gabriel Maja 2025.pdf";
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${email}`;
