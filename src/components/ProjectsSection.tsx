@@ -37,9 +37,9 @@ const ProjectsSection = () => {
       id: 3,
       title: "Claims Approved in Error Analytics",
       category: "Motor Insurance Dashboard",
-      problem: "Erroneously approved insurance claims were causing significant financial losses (ZAR 189.8 million over 6 months) with no clear visibility into root causes.",
+      problem: "Insurance claims were being wrongly approved, causing suspected financial losses with no visibility into the scale, root causes or accountability gaps.",
       solution: "Developed a comprehensive Power BI dashboard with multi-dimensional filtering, time-series analysis, and accountability tracking across error categories and decision makers.",
-      impact: "Quantified financial exposure, enabled accountability, and projected significant annual savings through process optimization.",
+      impact: "Discovered ~ZAR 190 million in losses over 6 months (47% error rate), identified the decision makers primarily responsible for approving these claims in error, enabled immediate accountability measures and established ongoing monitoring to prevent future financial exposure.",
       techStack: ["SQL", "Power BI", "Power Query", "M Code", "DAX", "Database Views", "Stored Procedures"],
       icon: <Shield className="h-6 w-6" />,
       color: "from-red-500 to-red-600"
