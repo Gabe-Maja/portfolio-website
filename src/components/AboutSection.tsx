@@ -22,27 +22,17 @@ const AboutSection = () => {
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
-                <img 
-                  src="/media/gabe.jpg" 
-                  alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist" 
-                  className="w-80 h-96 object-cover object-center rounded-2xl shadow-2xl" // h-96 makes it taller
-                  style={{
-                    objectPosition: "center top" // This will show from the top
-                  }} 
-                  loading="lazy" 
-                />
+                <img src="/media/gabe.jpg" alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist" className="w-80 h-96 object-cover object-center rounded-2xl shadow-2xl" // h-96 makes it taller
+              style={{
+                objectPosition: "center top" // This will show from the top
+              }} loading="lazy" />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
               </div>
             </div>
 
             {/* About Content */}
             <div className="space-y-6">
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                Gabe is a data analytics and business intelligence professional with a strong focus on 
-                turning data into strategic insight and compelling stories. He brings expertise in SQL, 
-                Power BI, and SSRS, along with experience using Python for ETL, machine learning, and 
-                version control via GitHub.
-              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground">Gabe is a data analytics and business intelligence professional with a strong focus on turning data into strategic insight and compelling stories. He brings expertise in SQL, Power BI and SSRS complemented by experience in AI Agents and automation, Python for ETL, machine learning and version control via GitHub.</p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
                 His analytics work spans insurance, fintech, and marketing - translating complex datasets 
