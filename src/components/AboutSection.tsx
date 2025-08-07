@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 const AboutSection = () => {
-  const hardSkills = ["SQL", "Power BI", "SSRS", "MS Excel", "Google Sheets", "Python", "Machine Learning", "Azure", "Databricks", "Git", "GitHub", "AI Agents", "Process Automation"];
+  const hardSkills = ["SQL", "Power BI", "SSRS", "AI Agents", "Process Automation", "Python",  "MS Excel", "Google Sheets", "Machine Learning", "Azure", "Databricks", "Git", "GitHub"];
   const softSkills = ["Communication", "Leadership", "Teamwork & Collaboration", "Problem-Solving", "Time Management"];
   const industries = ["Insurance", "Fintech", "Marketing"];
   return <section id="about" className="py-20 bg-gradient-to-b from-background to-emerald-50/10" aria-label="About Gabriel Maja section">
