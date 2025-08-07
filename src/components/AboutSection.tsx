@@ -22,10 +22,20 @@ const AboutSection = () => {
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
-                <img src="/media/gabe.jpg" alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist" className="w-80 h-96 object-cover object-center rounded-2xl shadow-2xl" // h-96 makes it taller
-              style={{
-                objectPosition: "center top" // This will show from the top
-              }} loading="lazy" />
+                <img 
+                  src="/media/gabe.jpg" 
+                  alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist" 
+                  className="w-80 h-96 object-cover object-center rounded-2xl shadow-2xl transition-opacity duration-300" 
+                  style={{
+                    objectPosition: "center top"
+                  }} 
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjM4NCIgdmlld0JveD0iMCAwIDMyMCAzODQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iMzg0IiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNjAgMTkyQzE3Ni41NjkgMTkyIDE5MCAyMDUuNDMxIDE5MCAyMjJDMTkwIDIzOC41NjkgMTc2LjU2OSAyNTIgMTYwIDI1MkMxNDMuNDMxIDI1MiAxMzAgMjM4LjU2OSAxMzAgMjIyQzEzMCAyMDUuNDMxIDE0My40MzEgMTkyIDE2MCAxOTJaIiBmaWxsPSIjOUNBM0FGIi8+CjxwYXRoIGQ9Ik0xMTAgMzAwQzExMCAyODMuNDMxIDEyMy40MzEgMjcwIDE0MCAyNzBIMTgwQzE5Ni41NjkgMjcwIDIxMCAyODMuNDMxIDIxMCAzMDBWMzMwSDExMFYzMDBaIiBmaWxsPSIjOUNBM0FGIi8+Cjx0ZXh0IHg9IjE2MCIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjM3OEI3IiBmb250LXNpemU9IjE0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiPkltYWdlIG5vdCBhdmFpbGFibGU8L3RleHQ+Cjwvc3ZnPg==';
+                    target.alt = 'Profile image not available';
+                  }}
+                />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
               </div>
             </div>

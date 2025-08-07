@@ -78,8 +78,13 @@ const TestimonialsSection = () => {
                           <img
                             src={testimonial.image}
                             alt={`Professional headshot of ${testimonial.name}, ${testimonial.role}`}
-                            className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                            className="w-16 h-16 rounded-full object-cover border-2 border-primary/20 transition-opacity duration-300"
                             loading="lazy"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiNGM0Y0RjYiLz4KPGNpcmNsZSBjeD0iMzIiIGN5PSIyNCIgcj0iOCIgZmlsbD0iIzlDQTNBRiIvPgo8cGF0aCBkPSJNMTYgNTJDMTYgNDQuMjY4IDIyLjI2OCAzOCAzMCAzOEgzNEM0MS43MzIgMzggNDggNDQuMjY4IDQ4IDUyVjU2SDE2VjUyWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K';
+                              target.alt = `${testimonial.name} - Profile image not available`;
+                            }}
                           />
                           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
                         </div>
