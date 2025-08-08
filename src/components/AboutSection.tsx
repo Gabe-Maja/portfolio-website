@@ -23,7 +23,7 @@ const AboutSection = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
                 <img 
-                  src="https://res.cloudinary.com/devb6meyp/image/upload/v1754615289/gabe_wgwbj8.jpg"
+                  src="https://res.cloudinary.com/devb6meyp/image/upload/gabe_wgwbj8.jpg"
                   alt="Professional headshot of Gabriel Maja, Data Analyst and Automation Specialist" 
                   className="w-80 h-96 object-cover object-center rounded-2xl shadow-2xl transition-opacity duration-300" 
                   style={{
