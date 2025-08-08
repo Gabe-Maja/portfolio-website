@@ -37,7 +37,7 @@ const HeroSection = () => {
 
   const handleResumeClick = () => {
     // Open PDF in new tab
-    window.open("/media/CV - Gabriel Maja 2025.pdf", "_blank");
+    window.open("/public/media/CV - Gabriel Maja 2025.pdf", "_blank");
   };
 
   return (
