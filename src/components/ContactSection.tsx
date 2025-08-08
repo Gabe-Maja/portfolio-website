@@ -26,7 +26,7 @@ const ContactSection = () => {
 
   const email = "gabemaja10@gmail.com";
   const linkedinUrl = "https://www.linkedin.com/in/gabriel-kevin-maja/";
-  const resumeUrl = "/media/CV - Gabriel Maja 2025.pdf";
+  const resumeUrl = encodeURI("/media/CV - Gabriel Maja 2025.pdf");
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${email}`;
