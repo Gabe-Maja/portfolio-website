@@ -37,7 +37,7 @@ const HeroSection = () => {
 
   const handleResumeClick = () => {
     // Open PDF in new tab
-    window.open("https://218830fd-8f83-4ec6-abc2-edaf44783355.lovableproject.com/public/media/CV%20-%20Gabriel%20Maja%2025.pdf", "_blank");
+    window.open("https://218830fd-8f83-4ec6-abc2-edaf44783355.lovableproject.com/public/media/CV%20-%20Gabriel%20Maja%202025.pdf", "_blank");
   };
 
   return (
