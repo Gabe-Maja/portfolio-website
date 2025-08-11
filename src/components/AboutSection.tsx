@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 const AboutSection = () => {
   const hardSkills = ["SQL", "Power BI", "SSRS", "AI Agents", "Process Automation", "Python",  "MS Excel", "Google Sheets", "Machine Learning", "Azure", "Databricks", "Git", "GitHub"];
   const softSkills = ["Communication", "Leadership", "Teamwork & Collaboration", "Problem-Solving", "Time Management"];
@@ -20,7 +21,7 @@ const AboutSection = () => {
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Profile Image */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex flex-col gap-6 justify-center lg:justify-start lg:-mt-6">
               <div className="relative">
                 <img 
                   src="https://res.cloudinary.com/devb6meyp/image/upload/v1754615289/gabe_wgwbj8.jpg"
@@ -39,6 +40,18 @@ const AboutSection = () => {
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-transparent"></div>
               </div>
+
+              <AspectRatio ratio={16 / 9}>
+                <iframe
+                  className="h-full w-full rounded-2xl shadow-2xl"
+                  src="https://www.youtube-nocookie.com/embed/_tt0srpy9kc?rel=0&modestbranding=1"
+                  title="Intro video: Gabriel Kevin Maja — Data Analytics and Business Intelligence"
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </AspectRatio>
             </div>
 
             {/* About Content */}
