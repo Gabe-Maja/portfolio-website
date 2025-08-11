@@ -21,7 +21,7 @@ const AboutSection = () => {
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Profile Image */}
-            <div className="flex flex-col gap-6 justify-center lg:justify-start lg:-mt-6">
+            <div className="flex flex-col gap-6 justify-center lg:justify-start lg:items-center lg:mt-4">
               <div className="relative">
                 <img 
                   src="https://res.cloudinary.com/devb6meyp/image/upload/v1754615289/gabe_wgwbj8.jpg"
